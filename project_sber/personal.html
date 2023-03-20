@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+<body style="background-color: #B2EBF2;">
+    <meta charset="UTF-8">
+    <title>Персонал</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="main.html">Личный кабинет</a></li>
+          <li><a href="transport.html">Транспорт</a></li>
+          <li><a href="personal.html">Персонал</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Персонал</h1>
+      <button id="addButton">Добавить персонал</button>
+      <table id="personnelTable">
+        <thead>
+          <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Должность</th>
+            <th>Дата рождения</th>
+            <th>Телефон</th>
+            <th>Email</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Здесь будут добавляться записи о персонале -->
+        </tbody>
+      </table>
+    </main>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="personnelForm">
+          <label for="firstName">Имя:</label>
+          <input type="text" id="firstName" name="firstName" required>
+          <label for="lastName">Фамилия:</label>
+          <input type="text" id="lastName" name="lastName" required>
+          <label for="position">Должность:</label>
+          <input type="text" id="position" name="position" required>
+          <label for="birthDate">Дата рождения:</label>
+          <input type="date" id="birthDate" name="birthDate" required>
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit" id="saveButton">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style="background-color: #B2EBF2;">
+    <meta charset="UTF-8">
+    <title>Транспорт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Личный кабинет</a></li>
+                <li class="active"><a href="transport.html">Транспорт</a></li>
+                <li><a href="personal.html">Персонал</a></li>
+                <li><a href="support.html">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Транспорт</h1>
+
+        <button id="add-transport-btn">Добавить транспорт</button>
+
+        <form id="transport-form">
+            <label for="model-input">Модель:</label>
+            <input type="text" id="model-input" required>
+
+            <label for="color-input">Цвет:</label>
+            <input type="text" id="color-input" required>
+
+            <label for="year-input">Год выпуска:</label>
+            <input type="number" id="year-input" required>
+
+            <button type="submit">Добавить</button>
+        </form>
+
+        <table id="transport-table">
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Цвет</th>
+                    <th>Год выпуска</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
